@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block content %}
+<div id="lecturer">
+        <div class="container">
+            <div class="add-block">
+                <div class="jumbotron">
+                    <h4>Добавление</h4>
+                    <div class="row">
+                        <div class="col-md-6 field">
+                            <input type="text" class="form-control" placeholder="Кафедра">
+                        </div>
+                        <div class="col-md-6 field">
+                            <input type="text" class="form-control" placeholder="Преподаватель">
+                        </div>
+                        <div class="row field-alone">
+                            <div class="col-md-3 col-md-offset-4">
+                                <input type="text" class="form-control" placeholder="employee параметер">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-offset-11">
+                        <button type="button" class="do-btn btn btn-success">добавить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="delete-block">
+                <div class="jumbotron">
+                    <h4>Удаление</h4>
+                    <div class="row">
+                            <div class="col-md-6">
+                                <p>Кафедра</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Преподаватель</p>
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <select class="form-control col-md-6">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-control ">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-offset-11">
+                        <button type="button" class="do-btn btn btn-danger">удалить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
